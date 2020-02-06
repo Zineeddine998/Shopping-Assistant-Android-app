@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.example.m15" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:theme="0x7f0e0154" android:label="0x7f0d0027" android:icon="0x7f0c0002" android:debuggable="true" android:testOnly="true" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="0x7f0c0002" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+        <activity android:theme="0x7f0e0007" android:name="com.example.m15.ui.Social"/>
+        <activity android:name="com.example.m15.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.example.m15.lifecycle-trojan"/>
+        <provider android:name="com.android.tools.ir.server.InstantRunContentProvider" android:multiprocess="true" android:authorities="com.example.m15.com.android.tools.ir.server.InstantRunContentProvider"/>
+    </application>
+</manifest>
